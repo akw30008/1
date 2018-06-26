@@ -1,0 +1,32 @@
+<html>
+<body>
+<script>
+var Contact = prompt('идентификация','');
+if (Contact == null)
+{
+	alert('Вход воспрещен');
+}
+else if (Contact == 'Администратор')
+{
+	var Password = prompt('Пароль?','');
+	if (Password == 'номер телефона')
+	{
+		alert('Добро пожаловать!');
+	}
+	else if (Password == null)
+	{
+		alert('Вход воспрещен');
+	}
+	else
+	{
+		alert('Пароль введен неверено');
+	}
+}
+else 
+{
+	alert('вы не идентифицированы');
+}
+</script>
+</body>
+</html>
+

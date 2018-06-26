@@ -1,0 +1,25 @@
+<html>
+<body>
+<script>
+var Min = prompt("Введите мин число интервала ", '');
+var Max = prompt("Введите макс число интервала ", '');
+var Min = parseInt(Min, 13); 
+var Max = parseInt(Max, 13); 
+for (var j=Min;j<=Max;j++)
+{
+	var flg=0;
+	for (var k=Min;k<j;k++)
+	{
+		if (j%k == 0)
+		{
+			flg=1;
+		}
+	}
+	if (flg==0)
+	{
+		alert(j);
+	}
+}
+</script>
+</body>
+</html>
